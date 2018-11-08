@@ -21,22 +21,22 @@ Start a UDP Echo Plus client with the data 'Hello,world!'
 
 Server side  
 
-> recv UDP Echo message from client ('192.168.100.83', 54142):Hellow,world!  
-> recv UDP Echo message from client ('192.168.100.83', 54142):Hellow,world!  
-> recv UDP Echo message from client ('192.168.100.83', 54142):Hellow,world!  
+> recv UDP Echo message from client ('192.168.100.83', 54142):Hello,world!  
+> recv UDP Echo message from client ('192.168.100.83', 54142):Hello,world!  
+> recv UDP Echo message from client ('192.168.100.83', 54142):Hello,world!  
 > ('192.168.100.83', 54142) has existed  
 > UDPEchoConfig_PacketsReceived= 3  
-> UDPEchoConfig_BytesReceived= 123  
+> UDPEchoConfig_BytesReceived= 120  
 > UDPEchoConfig_PacketsResponded= 3  
-> UDPEchoConfig_BytesResponded= 123  
+> UDPEchoConfig_BytesResponded= 120  
 
 Client side
 
 > connect to server: 192.168.100.123 30000  
-> Send Echo Request Hellow,world! to 13(33) bytes of data.  
-> Reply from ('192.168.100.123', 30000): seq=1 bytes=33 rtd=1337us  
-> Reply from ('192.168.100.123', 30000): seq=2 bytes=33 rtd=1310us  
-> Reply from ('192.168.100.123', 30000): seq=3 bytes=33 rtd=1886us  
+> Send Echo Request Hello,world! to 12(32) bytes of data.  
+> Reply from ('192.168.100.123', 30000): seq=1 bytes=32 rtd=1337us  
+> Reply from ('192.168.100.123', 30000): seq=2 bytes=32 rtd=1310us  
+> Reply from ('192.168.100.123', 30000): seq=3 bytes=32 rtd=1886us  
 > RoundTripPacketLoss= 0  
 > SentPacketLoss= 0  
 > ReceivePacketLoss= 0  
